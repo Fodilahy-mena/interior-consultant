@@ -1,0 +1,37 @@
+
+ nav {
+    padding: 0;
+    background-color: transparent;
+    // top: 0;
+    // left: auto;
+    // right: 0;
+    // bottom: auto;
+    // width: auto;
+    box-shadow: none;
+    transform: none;
+    transition: none;
+    // position: absolute;
+    // z-index: 3;
+}
+ nav > ul {
+    flex-direction: row;
+    list-style: none;
+    display: flex;
+}
+ nav > ul a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+nav .interor {
+    padding: 1.25rem;
+    background-image: none;
+    line-height: 1.25rem;
+    background-position: 1rem 50%;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+}

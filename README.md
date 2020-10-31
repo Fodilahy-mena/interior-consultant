@@ -65,6 +65,15 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
+ ### SASS
+ #### To use sass
+ add this:
+```
+"scripts": {
+    "scss": "node-sass scss -o webroot/css",
+    "scss:watch": "npm run scss && node-sass scss -w -o css"
+  },
+```
 
 -   [React](https://reactjs.org/)
 
@@ -98,3 +107,5 @@ $ npm start
 -   Website [your-website.com](https://{your-web-site-link})
 -   GitHub [@your-username](https://{github.com/your-usermame})
 -   Twitter [@your-twitter](https://{twitter.com/your-username})
+
+
