@@ -13,35 +13,3 @@ body > header, main {
     min-width: 90%;
     margin: auto;
 }
-
-main {
-    display: grid;
-    grid-template-columns: .8fr 1fr;
-    gap: 6rem;
-}
-main h2 {
-    font-family: Lora;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 48px;
-    line-height: 61px;
-}
-main p {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-}
-main span {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-}
-main span svg {
-    position: relative;
-    top: 6px;
-}
-main img {
-    max-width: 100%;
-    min-width: 100%;
-}
