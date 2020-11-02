@@ -1,13 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Montserat:300,400,500,bold&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Pro:200,300,400,500,bold&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,bold&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lora:300,normal,500,bold&display=swap");
 body {
   margin: 0;
   padding: 0;
   background-color: #181719;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  font-family: Montserrat; }
 
 body > header, main {
   max-width: 90%;
   min-width: 90%;
   margin: auto; }
+
+hr {
+  max-width: 90%;
+  min-width: 90%;
+  margin: auto;
+  margin-top: 2rem; }
+
+footer {
+  max-width: 90%;
+  min-width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  opacity: .5; }
 
 body > header {
   display: flex;
@@ -31,9 +50,7 @@ body > header > h1 {
 .navigation > ul {
   list-style: none;
   padding: 0;
-  max-width: 22%;
-  min-width: 22%;
-  margin: auto;
+  text-align: center;
   position: relative;
   top: 8rem; }
 
@@ -58,13 +75,13 @@ body > header > h1 {
 
 .navigation {
   padding: 1rem;
-  height: 100%;
   position: absolute;
   z-index: 3;
   top: -7px;
   right: 0;
   bottom: 0;
-  width: 100%;
+  width: 375px;
+  height: auto;
   transform: translateY(-100%);
   transition: transform 0.3s;
   background: #181719;
@@ -95,7 +112,7 @@ body > [type="checkbox"] {
 .navigation > label, body > header > label {
   width: 28px;
   height: 28px;
-  background-size: 20px;
+  background-size: 28px;
   background-repeat: no-repeat;
   position: relative; }
 
@@ -106,13 +123,13 @@ body > header > label {
   background-image: url(../images/cross.svg);
   margin-left: auto; }
 
-@media (min-width: 768px) {
+@media (min-width: 977px) {
   body > header label {
     display: none; }
   .navigation {
     padding: 0;
     background-color: transparent;
-    top: 0;
+    top: 16px;
     left: 0;
     right: 0;
     bottom: auto;
@@ -136,18 +153,24 @@ body > header > label {
     position: unset;
     top: unset; } }
 
-@media (min-width: 768px) {
+main > header {
+  margin-bottom: 41px; }
+
+@media (min-width: 977px) {
   main {
     display: grid;
     grid-template-columns: .6fr 1fr;
-    gap: 4rem; } }
+    gap: 4rem;
+    top: 121px;
+    position: relative; } }
 
 main h2 {
   font-family: Lora;
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
-  line-height: 61px; }
+  line-height: 61px;
+  margin-top: 0; }
 
 main p {
   font-style: normal;
@@ -167,3 +190,62 @@ main span svg {
 main img {
   max-width: 100%;
   min-width: 100%; }
+
+.post {
+  max-width: 75%;
+  min-width: 75%;
+  padding: 14px;
+  position: relative;
+  bottom: 5rem;
+  margin: auto;
+  margin-left: auto;
+  margin-right: 16px;
+  background-color: #181719;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.profile--link {
+  display: flex;
+  margin-left: 1rem; }
+
+.post__profile > div {
+  margin-left: 1rem;
+  position: relative;
+  top: 25px;
+  height: max-content; }
+
+.post__profile > h3 {
+  font-family: Lora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px; }
+
+.post__profile span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #828282; }
+
+.post h4 {
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px; }
+
+.profile__photo {
+  max-width: 40px;
+  min-width: 40px;
+  height: auto;
+  border-radius: 50%; }
+
+@media (min-width: 977px) {
+  .post {
+    max-width: 75%;
+    min-width: 75%;
+    grid-column: 2/3;
+    bottom: 10rem;
+    margin-left: auto;
+    margin-right: 32px;
+    box-shadow: unset; } }
