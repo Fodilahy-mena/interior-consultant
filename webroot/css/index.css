@@ -1,13 +1,20 @@
-@import url("https://fonts.googleapis.com/css?family=Montserat:300,400,500,bold&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Pro:200,300,400,500,bold&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,bold&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lora:300,normal,500,bold&display=swap");
+@font-face {
+  font-family: MyMontserratRegular;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), local("montserrat-regular"), local("montserrat regular"), url("../fonts/Montserrat-Regular1.woff2") format("woff2"), url("../fonts/Montserrat-Regular1.woff") format("woff"); }
+
+@font-face {
+  font-family: MyMontserratExtralight;
+  src: local("Montserrat Extra Light"), local("Montserrat-Extra Light"), local("montserrat-extra light"), local("montserrat extra light"), local("montserrat extra-light"), local("Montserrat ExtraLight"), local("Montserrat Extra-Light"), url("../fonts/Montserrat-ExtraLight1.woff2") format("woff2"), url("../Montserrat-ExtraLight1.woff") format("woff"); }
+
 body {
   margin: 0;
   padding: 0;
   background-color: #181719;
   color: #FFFFFF;
-  font-family: Montserrat; }
+  font-family: MyMontserratRegular; }
 
 body > header, main {
   max-width: 90%;
@@ -47,14 +54,20 @@ body > header > h1 {
   box-sizing: border-box;
   padding: 8px; }
 
-.navigation > ul {
+.navigation__list {
   list-style: none;
   padding: 0;
   text-align: center;
   position: relative;
   top: 8rem; }
 
-.navigation > ul a {
+.navigation__item {
+  opacity: .8; }
+
+.active {
+  opacity: 1; }
+
+.navigation__link {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -62,10 +75,10 @@ body > header > h1 {
   line-height: 22px;
   color: #FFFFFF; }
 
-.navigation > ul > li:last-child a {
+.navigation__item:last-child a {
   padding-inline-end: 0; }
 
-.navigation .interor {
+.navigation__link {
   padding: 1.25rem;
   background-image: none;
   line-height: 1.25rem;
@@ -142,7 +155,7 @@ body > header > label {
     margin: auto; }
   .navigation label {
     display: none; }
-  .navigation > ul {
+  .navigation__list {
     flex-direction: row;
     display: flex;
     justify-content: flex-end;
@@ -152,6 +165,14 @@ body > header > label {
     margin: unset;
     position: unset;
     top: unset; } }
+
+@font-face {
+  font-family: MyMontserratRegular;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), local("montserrat-regular"), local("montserrat regular"), url("../fonts/Montserrat-Regular1.woff2") format("woff2"), url("../fonts/Montserrat-Regular1.woff") format("woff"); }
+
+@font-face {
+  font-family: MyMontserratExtralight;
+  src: local("Montserrat Extra Light"), local("Montserrat-Extra Light"), local("montserrat-extra light"), local("montserrat extra light"), local("montserrat extra-light"), local("Montserrat ExtraLight"), local("Montserrat Extra-Light"), url("../fonts/Montserrat-ExtraLight1.woff2") format("woff2"), url("../Montserrat-ExtraLight1.woff") format("woff"); }
 
 main > header {
   margin-bottom: 41px; }

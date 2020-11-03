@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Montserat:300,400,500,bold&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Montserat:300,400,500,bold&display=swap');
 
 @import './color';
+@import './fonts';
 
 body {
     margin: 0;
     padding: 0;
     background-color: $body_bg;
     color: $anchor_color;
-    font-family: Montserrat;
+    font-family: MyMontserratRegular;
 }
 
 body > header, main {

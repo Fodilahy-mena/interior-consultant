@@ -1,0 +1,24 @@
+@font-face {
+    font-family: MyMontserratRegular;
+    src: local('Montserrat Regular'),
+         local('Montserrat-Regular'),
+         local('montserrat-regular'),
+         local('montserrat regular'),
+         url('../fonts/Montserrat-Regular1.woff2') format("woff2"),
+         url('../fonts/Montserrat-Regular1.woff') format("woff");
+  }
+
+  @font-face {
+    font-family: MyMontserratExtralight;
+    src: local('Montserrat Extra Light'),
+         local('Montserrat-Extra Light'),
+         local('montserrat-extra light'),
+         local('montserrat extra light'),
+         local('montserrat extra-light'),
+         local('Montserrat ExtraLight'),
+         local('Montserrat Extra-Light'),
+        //  url('../webroot/fonts/Montserrat-ExtraLight1.woff2') format("woff2"),
+         url('../fonts/Montserrat-ExtraLight1.woff2') format("woff2"),
+         url('../Montserrat-ExtraLight1.woff') format("woff");
+  }
+  

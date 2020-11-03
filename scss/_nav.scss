@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,bold&display=swap');
 
-.navigation > ul {
+.navigation__list {
     list-style: none;
     padding: 0;
     text-align: center;
@@ -8,9 +8,13 @@
     top: 8rem;
 }
 
-
- 
-.navigation > ul a {
+.navigation__item {
+    opacity: .8;
+}
+.active {
+    opacity: 1;
+}
+.navigation__link {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -18,10 +22,10 @@
     line-height: 22px;
     color: #FFFFFF;
 }
-.navigation > ul > li:last-child a {
+.navigation__item:last-child a {
     padding-inline-end: 0;
 }
-.navigation .interor {
+.navigation__link {
     padding: 1.25rem;
     background-image: none;
     line-height: 1.25rem;
@@ -109,7 +113,7 @@ body > header label {
     .navigation label {
     display: none;
     }
-.navigation > ul {
+    .navigation__list {
     flex-direction: row;
     display: flex;
     justify-content: flex-end;
@@ -119,6 +123,6 @@ body > header label {
     margin: unset;
     position: unset;
     top: unset;
-}
+    }
 
 }
